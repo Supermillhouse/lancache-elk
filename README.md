@@ -1,6 +1,6 @@
 # lancache-elk
 
-Collect, process and visualise statistics from `zeropingheroes/lancache` with Elasticsearch, Logstash and Kibana
+Collect, process and visualise statistics from `Supermillhouse/lancache-fbeat-bundle` with Elasticsearch, Logstash and Kibana
 
 ## Screenshots
 
@@ -23,14 +23,13 @@ These screenshots are taken from a 100 person event, with the cache pre-loaded u
 
 ### Lancache Server
 
-* [`zeropingheroes/lancache`](https://github.com/zeropingheroes/lancache)
-* [`zeropingheroes/lancache-filebeat`](https://github.com/zeropingheroes/lancache-filebeat)
+* [`Supermillhouse/lancache-fbeat-bundle`](https://github.com/Supermillhouse/lancache-fbeat-bundle)
 
 _`lancache-elk` cannot be run on the same host as `lancache` as both use port 80._
 
 ## Installation
 
-1. `git clone https://github.com/zeropingheroes/lancache-elk.git && cd lancache-elk`
+1. `git clone https://github.com/Supermillhouse/lancache-elk.git && cd lancache-elk`
 
 2. `cp .env.example .env`
 
