@@ -50,6 +50,8 @@ ln -sf /etc/nginx/sites-available/kibana /etc/nginx/sites-enabled/kibana
 
 # Configure logstash with the lancache pipeline
 cp $SCRIPT_DIR/configs/logstash/lancache-pipeline.conf /etc/logstash/conf.d/lancache-pipeline.conf
+# Disable existing config on port 5044
+cp $SCRIPT_DIR/configs/logstash/02-beats-input.conf /etc/logstash/conf.d/02-beats-input.conf
 
 # Set the correct permissions on the logstash directory
 chown -R logstash:root /etc/logstash/conf.d
